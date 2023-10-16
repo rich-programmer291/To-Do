@@ -1,0 +1,17 @@
+<%-include("partials/header.ejs")%>
+
+<div id="box" class="left">
+  <form id="newTask" action="/work" method="post">
+    <input type="text" id="newItem" placeholder="Add New Task" name="newItem">
+    <button method="post" type="submit" name="list"><h1>+</h1></button>
+  </form>
+</div>
+<div class="right">
+    <div id="box" class="head">
+        <h2>Work</h2>
+    </div>
+  <div id="box" class="items">
+    <%-include("storage/work_list.ejs")%>
+  </div>
+</div>
+<%-include("partials/footer.ejs")%>

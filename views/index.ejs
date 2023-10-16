@@ -1,0 +1,19 @@
+<%-include("partials/header.ejs")%>
+
+<div id="box" class="left">
+  <form id="newTask" action="/" method="post">
+    <input type="text" id="newItem" placeholder="Add New Task" name="newItem">
+    <button method="post" type="submit" name="list"><h1>+</h1></button>
+  </form>
+</div>
+<div class="right">
+    <div id="box" class="head">
+        <%var d = new Date();%>
+        <%const today  = d.getDate() +" / "+(d.getMonth()+1)+ " / "+ d.getFullYear();%>
+        <h2><%=today %></h2>
+    </div>
+  <div id="box" class="items">
+    <%-include("storage/today_list.ejs")%>
+  </div>
+</div>
+<%-include("partials/footer.ejs")%>

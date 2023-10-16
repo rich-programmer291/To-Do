@@ -1,0 +1,144 @@
+:root {
+    --lavender-pink: #e4e9fd;
+    --uranian-blue: #a683e3;
+    --font-color: #001c3b;
+}
+
+body {
+    background-color: #e4e9fd;
+    background-image: -webkit-linear-gradient(65deg, #a683e3 50%, #e4e9fd 50%);
+    min-height: 1000px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar-nav{
+    list-style: none;
+}
+
+.nav-link {
+    color: #412969;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 20px 20px;
+}
+
+i {
+    padding: 5px 5px;
+}
+
+form {
+    display: flex;
+    color: var(--font-color);
+    align-items: center;
+    justify-content: center;
+}
+
+#newItem {
+    text-align: center;
+    height: 50px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 30px;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 200;
+    width: 313px;
+}
+
+main {
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    background-color: var(--uranian-blue);
+    color: black;
+    border: none;
+    font-size: 40px;
+    margin: 10px 10px;
+    padding: 0 5px;        
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    margin: 0;
+}
+
+
+.item {
+    display: flex;
+    padding: 5px;
+    padding-left: 3%;
+    height:  60px;
+    align-items: center;
+    
+}
+
+input:checked+p {
+    color: grey;
+    text-decoration: line-through;
+    text-decoration-color: #a683e3;
+}
+
+p {
+    margin: 0;
+    padding: 20px;
+    font-size: 20px;
+    color: #00204a;
+}
+
+footer {
+    flex: 0 0 auto;
+    color: white;
+    color: rgba(81, 81, 81, 0.5);
+    text-align: center;
+}
+
+.left{
+    width: 370px;
+    height: 50px;
+    border-radius: 30px;
+    background: white;
+}
+
+.items{
+    background: white;
+}
+
+#box{
+    /* background: white; */
+    width: 370px;
+    height: auto;
+    box-shadow: 1px 2px 7px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+hr{
+    display: flex;
+    height: 1px;
+    background: rgb(181, 181, 181);
+    width: 100%;
+    margin:0;
+}
+
+.head{
+    display: flex;
+    margin-bottom: 10%;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 60px;
+    padding: 5% 0;
+    color: white;
+    border-radius: 30px;
+    background: var(--uranian-blue);
+}
+h2{
+    margin-bottom: 0;
+}
